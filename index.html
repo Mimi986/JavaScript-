@@ -12,7 +12,96 @@
         console.info('Le serveur a été redémarré avec succès');
         console.error("Une erreur s'est introduite dans le code");
         console.warn("Attention cette action peut avoir des conséquences imprévues");
-        alert('Ceci est une alerte');
+        //alert('Ceci est une alerte');
+        //déclarations des variables
+        var name = "mounia" ;
+        var age=19;
+        const pi=3.14;
+        console.log("mon nom est :" ,name);
+        console.log(name.length);
+        console.log("Je m'appelle",name,"et j'ai",age,"ans");
+        console.log("Je m'appelle "+name+"et j'ai "+age+" ans");
+        console.log(`Je m'appelle ${name} et j'ai ${age} ans`);
+
+        //les conditions 
+        const  time = new Date().getHours();  //Date est une fonction pré-définie , on récupère les heures 
+        var greeting; 
+        if (time<10) {
+            greeting="good morning";
+        } else if (time<20){
+            console.log("good day");
+        }else{
+            console.log("good evening");
+        }
+
+        let module1=10;
+        let module2=13;
+        let moy=(module1+module2)/2;
+        console.log(moy);
+        if (moy>10){
+            console.log("Bravo vous avez réussi!");
+        }
+        else if(moy == 10){
+            console.log("Passable");
+        }
+        else{
+            console.log("Vous etes ajournés");
+        }
+        //comparaison totale et partielle 
+        var nombre="5";
+        /*if(nombre==5){
+            console.log("compararaison partielle; la valeur est égale après comparaison");
+        }else{
+            console.log("comparaison partielle; la valeur est différente")
+        }*/
+
+        //conditions ternaires
+        nombre == 5 ? console.log("compararaison partielle; la valeur est égale après comparaison"):console.log("comparaison partielle; la valeur est différente");
+        
+        /*if(nombre===5){
+            console.log("compararaison totale; la valeur et le type sont égaux");
+        }else{
+            console.log("compararaison totale; la valeur ou le type sont différents");
+        }*/
+
+        nombre === 5 ? console.log("compararaison totale; la valeur et le type sont égaux"):console.log("compararaison totale; la valeur ou le type sont différents");
+
+        //switch-case
+        var couleur = "rouge";
+        switch (couleur) {
+            case "rouge":
+                console.log("La couleur est rouge");
+                break;
+            case "bleue":
+                console.log("La couleur est bleue");
+                break;
+            case "verte":
+                console.log("La couleur est verte");
+                break;
+            default:
+                console.log("couleur non-reconnue");
+                break;
+        }
+
+        //les fonctions 
+        function Salutations(){
+            console.log("Hello everyone it's Mounia right here");
+        }
+        Salutations();
+
+        function addition(a,b){
+            return a+b;   //pour stocker le résultat
+        }
+        console.log(addition(5,3));
+
+        function test(num){
+            if(num%2==0){
+                console.log("le nombre est pair");
+            }else{
+                console.log("le nombre est impair");
+            }
+        }
+        console.log(test(175));
     </script>
 </body>
 </html>
