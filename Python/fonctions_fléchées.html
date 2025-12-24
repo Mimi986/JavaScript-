@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions Fléchées </title>
+</head>
+<body>
+    <script>
+       /* function addition (a,b){
+            return a+b;
+        }
+        console.log(addition(2,3));*/
+
+        const addition_fléchée = (a,b) => a+b;  
+           console.log(addition_fléchée(2,3)); //fonction fléchée 
+
+        function Bonjour(){
+            console.log("Hello world");
+        }   
+
+        const Bonjour_flèche = () => console.log("Hello world");
+        Bonjour();
+        Bonjour_flèche();
+
+        let x=40;
+
+        /*function estpaire(x){
+            if(x%2 == 0) return true;
+            else return false ; 
+        }*/
+        const est_paire = (x) =>{
+            if(x%2 == 0) return true;
+            else return false ; }
+
+            console.log(est_paire(x));
+    </script>
+</body>
+</html>
