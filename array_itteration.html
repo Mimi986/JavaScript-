@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iterations</title>
+</head>
+<body>
+    <h2>Fonctions d'itération dans le tableau</h2>
+    <p id="demo"></p>
+    <script>
+        const numbers=[45,4,9,16,25];
+        function double_and_log(num){
+            console.log(num*2,"résultat de la fonction double_and_log");
+}
+    numbers.forEach(double_and_log);
+    console.log(numbers);
+
+    const num=[1,2,3,4,5];
+    function double(num){
+        return (num*2);
+    }
+    const double_numbers=num.map(double);
+    console.log(double_numbers);
+    /*la différence entre map et forEach : forEach affiche chaque élément tout seul ,
+     map donne directement le nouveau tableau avec le résultat voulu*/
+
+     const numbers1=[3,5];
+     const filternumbers1=numbers1.filter((num)=> num%2===0)  //prend les éléments satisfaisant la condition 
+     console.log(filternumbers1);
+
+     const numbers2=[4,5,6];
+     const everynumbers2=numbers2.every((num)=>num%2===0)
+     console.log(everynumbers2);
+
+     const fruits=["pomme","banane","orange","fraise"];
+     const index_of_orange=fruits.indexOf("orange");
+     console.log(index_of_orange);
+
+     const result=fruits.find((f)=>f.length>20);  //retourne le premier élément satisfaisant la condition 
+     console.log(result);
+
+     const numbers3=[10,20,30,40,50];
+     const index=numbers3.findIndex((num)=>num>25);  //retourne l'index du premier élément satisfaisant la condition
+     console.log(index);
+    </script>
+</body>
+</html>
